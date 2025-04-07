@@ -170,6 +170,15 @@ main .main_izquierda{
     margin: 10px;
 }
 
+.mano_celular_img{
+    display: flex;
+    max-width: 65%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-self: flex-end;
+    
+}
+
 
 main .main_derecha{
     display: flex;
