@@ -57,6 +57,7 @@ header{
 
 .header_derecha{
     display: flex;
+    flex-direction: ;
     align-items: center;
     margin-right: 70px;
 }
