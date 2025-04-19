@@ -11,16 +11,18 @@ header{
     justify-content: space-between;
     background-color: white;
     height: 100px;
-    width: 100vw;
+    width: 100%;
     border-bottom: 2px solid lightgrey;
 }
 
 .logo_starbucks_img{
     cursor: pointer;
+    margin-left: 65%;
 }
 
 .menu{
     border: transparent;
+    margin-left: 5%;
 }
 
 .menu :hover{
@@ -56,11 +58,7 @@ header{
 .header_derecha{
     display: flex;
     align-items: center;
-    margin-right: 20px;
-}
-
-.header_derecha div{
-    display: flex;
+    margin-right: 70px;
 }
 
 .header_derecha p{
@@ -104,11 +102,16 @@ header{
     padding-right: 60px;
 }
 
+.menu_hamburguesa{
+    opacity: 0;
+}
+
 main{
     display: flex;
     background-color: white;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    padding-bottom: 1px;
 }
 
 main .main_izquierda{
@@ -185,11 +188,12 @@ main .main_izquierda{
 main .main_derecha{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    height: 100%;
+    width: 100%;
+    min-height: calc(100vh-100px);
     background-color: white;
     margin-left: 40%;
     margin-top: 100px;
+    margin-bottom: 25px;
     align-items: center;
 }
 
@@ -204,16 +208,26 @@ main .main_derecha{
     padding-right: 2rem;
     text-align: center;
     justify-content: center;
+    margin: 0px 130px 0px 120px;
 }
 
 .main_derecha1 img{
-    max-width: 35%;
+    max-width: 95%;
+}
+
+.main_derecha1 p{
+    margin-top: 10px;
+}
+
+#lanzamientos{
+    margin-top: 30px;
 }
 
 #item1{
     align-content: center;
     justify-content: center;
     text-align: center;
+    margin-top: 15px;
 }
 
 .unete_starbucks_rewards{
@@ -240,21 +254,6 @@ main .main_derecha{
     align-items: center;
 }
 
-.main_derecha1-2{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    flex-wrap: wrap;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding: 25px;
-    text-align:center;
-}
-
-.main_derecha1-2 img{
-    max-width: 30%;
-}
 
 .bebida_cumpleaños{
     flex: 2;
@@ -282,24 +281,26 @@ main .main_derecha{
     padding-top: 25px;
     font-size: 1.37em;
     width: 70%;
+    margin-top: 55px;
 }
 
 .main_derecha2{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
     background-color: white;
     text-align: center;
+    justify-content: center;  
+    padding: 5px;
+    width: 90%;
+    margin: auto;
 }
 
 .main_derecha2 img{
-    max-width: 35%;
+    max-width: 65%;
 }
 
 .beneficios_exclusivos{
-    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,31 +308,13 @@ main .main_derecha{
 }
 
 .tarjeta_gold{
-    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main_derecha2-1{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 25px;
-    background-color: white;
-    border-bottom: 1px solid grey;
-    text-align: center;
-}
-
-.main_derecha2-1 img{
-    max-width: 35%;
-}
-
 .bebida_pan_100{
-    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,54 +322,87 @@ main .main_derecha{
 }
 
 .estrellas15_aniversario{
-    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.rellena_tu_vaso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-footer{
+.ofertas_personalizadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bebida_de_cumpleaños2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.disfruta_lanzamientos_exclusivos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
     display: flex;
     flex-direction: column;
     margin-left: 35%;
-    margin-top: 40px;
-    padding: 20px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 60%;
+    margin-left: 40%;
+
 }
 
-footer img{
+#logo_verde{
     max-width: 50%;
-    margin-top: 75px;
+    margin-top: 5px;
     margin-left: 30%;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid grey;
+    border-bottom: 5px solid grey;
 }
 
-.fotter{
+.fotter_contenedor{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-right: 60%;
 }
 
-footer .footer_izq{
+.footer_izq{
     display: flex;
     flex-direction: column;
     margin-right: 15px;
     align-items: flex-start;
+    align-content: center;
     justify-content: flex-start;
+    padding-top: 20px;
 }
 
-footer .footer_izq a{
+.footer_izq a{
     justify-content: flex-start;
     align-content: center;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
-footer .footer_der{
+.footer_der{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -394,6 +410,76 @@ footer .footer_der{
     justify-content: space-around;
 }
 
-footer .footer_der p{
+.footer_der p{
     padding: 10px;
+}
+
+.ultimo_hr{
+    border: none;
+    height: 1px;
+    background-color: rgba(75, 73, 73, 0.267);
+}
+
+.redes_sociales{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.redes_sociales img{
+    margin-left: 15px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    body{
+        font-size: 10px;
+        color: blue;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px){
+    body{
+        font-size: 9px;
+        color: aqua;
+    }
+
+    .localiza_tienda{
+        cursor: pointer;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        font-size: 9px;
+    }
+
+    .logo_starbucks_img{
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .menu_hamburguesa{
+        opacity: 1;
+        max-width: 100%;
+        height: 80px;
+        margin-left: 200px;
+    }
+
+    .icono_ubicacion{
+        display: none;
+    }
+
+    .localiza_tienda{
+        display: none;
+    }
+
+    #boton_inicio_sesion{
+        display: none;
+    }
+
+    #boton_unete_ahora{
+        display: none;
+    }
 }
